@@ -16,4 +16,8 @@ is actually a base64 encoded file
 ## Decode
 `node decode.js`
 
+base64 is actually a hexadecimal representation of the file
+
+`file out.hex` to determine file type
+
 ## Next steps?

@@ -1,7 +1,9 @@
-var fs = require('fs'),
-	file = 'coin.txt',
-	stream = fs.createReadStream(file),
-	data = '';
+var fs 		= require('fs'),
+	inFile		 	= 'coin.txt',
+	stream 	= fs.createReadStream(inFile),
+	data 		= '',
+	outFile 		=	'coin.hex'
+	;
 
 stream.on('data', function(chunk) { data+=chunk; });
 
@@ -18,8 +20,14 @@ var decode = function(){
 		asciiHex = new Buffer(ascii, 'hex').toString('ascii')
 	;
 
-	console.log(asciiHex);
+	save(asciiHex);
 }
+
+var save = function(data){
+	fs.writeFile(outFile, data, function(){
+		console.log('File saved');
+	});
+};
 
 // fs.readFile(file, function(err,data){
 // 	if(err) throw err;
