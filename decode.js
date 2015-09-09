@@ -15,9 +15,10 @@ var decode = function(){
 		base64 = new Buffer(data, 'base64').toString('base64'),
 		hex = new Buffer(data, 'base64').toString('hex'),
 		binary = new Buffer(data, 'base64').toString('binary')
+		asciiHex = new Buffer(ascii, 'hex').toString('ascii')
 	;
 
-	console.log(binary);
+	console.log(asciiHex);
 }
 
 // fs.readFile(file, function(err,data){
