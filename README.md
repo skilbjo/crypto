@@ -1,6 +1,11 @@
 # crypto
 
 ## Coin
+1. Receive this coin at DEFCON
+
+![Image of cryptic coin](defcon.jpg)
+
+2. 
 
 Binary to ascii
 
