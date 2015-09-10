@@ -5,24 +5,18 @@
 
 ![Image of cryptic coin](defcon.jpg)
 
-2. 
-
-Binary to ascii
+2. bit.ly/1CyQ1bc
 
 ## Website
-
-Single image is not displayed
+3. Single image is not displayed, `coin.gif`
 
 ## Image
-http://thehackerplaybook.com/defcon_coin/coin.gif
-
-is actually a base64 encoded file
+4. `coin.gif` is actually a base64 encoded file
 
 ## Decode
-`node decode.js`
+5. base64 is actually a hexadecimal representation of the file
 
-base64 is actually a hexadecimal representation of the file
+6. `node decode.js` to write the `base64` to `ASCII` and then `ASCII` to `hexadecimal`
 
-`file out.hex` to determine file type
+7. `file coin.hex` to determine file type
 
-## Next steps?
