@@ -2,7 +2,7 @@ var fs 		= require('fs'),
 	inFile		 	= 'coin.txt',
 	stream 	= fs.createReadStream(inFile),
 	data 		= '',
-	outFile 		=	'coin.base64'
+	outFile 		=	'coin.hex'
 	;
 
 stream.on('data', function(chunk) { data+=chunk; });
@@ -35,7 +35,8 @@ var decode = function(){
 		asciiHex = new Buffer(ascii, 'hex').toString('ascii')
 	;
 
-	save(base64);
+	// console.log(asciiHex);
+	save(asciiHex);
 };
 
 coin();

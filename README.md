@@ -14,7 +14,7 @@
 4. `coin.gif` is actually a base64 encoded file
 
 ## Decode
-5. base64 is actually a hexadecimal representation of the file
+5. base64 gets turned into `ascii`, which is then turned into `hexadecimal`
 
 6. `node decode.js` to write the `base64` to `ASCII` and then `ASCII` to `hexadecimal`
 
